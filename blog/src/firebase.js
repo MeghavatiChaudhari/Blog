@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
-import firebase from 'firebase/app';
-import 'firebase/firestore';
+import firebase from "firebase/compat/app";
+import "firebase/compat/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyAyUB-BToNLuYI464K4dlgSQBdfx1PCXkM",
   authDomain: "blog-30427.firebaseapp.com",
@@ -11,5 +11,6 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+// const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 export const firestore = firebase.firestore();
