@@ -13,7 +13,7 @@ code {
 }
 
 .container {
-  width: 800px;
+  width: 2000px;
   margin: 0 auto;
 }
 /* .home h1 {
@@ -48,6 +48,7 @@ code {
   text-align: center;
   font-style: italic;
   margin-bottom: 20px;
+  font-size: 25px;
 }
 .post-detail h1 {
   text-align: center;
@@ -74,16 +75,20 @@ code {
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
+  
 }
 .create-post .form-field label {
   margin-bottom: 9px;
+  align-items: center;
 }
 .create-post .form-field input {
+  align-items: center;
   height: 37px;
   border: 1px solid #e1e1e1;
   border-radius: 3px;
   font-size: 18px;
   padding-left: 10px;
+  align-items: center;
 }
 
 .create-post .form-field textarea {

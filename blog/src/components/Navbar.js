@@ -2,10 +2,21 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+
+const Nav = styled.div`
+ height:80px;
+ width:3000px;
+ background-color:black;
+`;
+
 const StyledLink = styled(Link)`
 // applying styles to 3rd party component
 text-decoration: none;
-color: #9e9e9e;
+color: white;
+font-size:25px;
+margin:10px 20px 20px 20px;
+margin-top:30px;
+padding:10px;
 
 &:hover{
   text-decoration: underline;
@@ -16,7 +27,7 @@ color: #9e9e9e;
 
 function Navbar() {
     return(
-      <div>
+      <Nav>
       <ul id="nav">
        <li>
         <StyledLink to="/">Home</StyledLink>
@@ -25,7 +36,7 @@ function Navbar() {
         <StyledLink to="/create-post"> Create Post</StyledLink>
        </li>
       </ul>
-      </div> 
+      </Nav> 
     );
   }
   export default Navbar;

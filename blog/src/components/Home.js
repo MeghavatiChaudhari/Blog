@@ -5,9 +5,16 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 
+const HomeStyle = styled.div`
+margin:0px;
+height:1000px;
+background-color:#87CEFA;
+width:100%;
+`;
+
 const BlogHeading = styled.h1`
   text-align: center;
-  color: #2196f3;
+  color: black;
   margin-bottom: 2px;
 `;
 
@@ -64,7 +71,8 @@ function Home() {
   },[]);
 
     return(
-      <div className="home">
+      // <div className="home">
+      <HomeStyle>
       <BlogHeading >Tech Blog</BlogHeading >
       <div id='blog-by'>Meghavati</div>
       {posts.map((post , index)=>(
@@ -76,16 +84,12 @@ function Home() {
           <PostSubtitle> {post.subtitle}</PostSubtitle>
           </Post>
       ))}
-      </div> 
+       {/* </div>  */}
+      </HomeStyle>
     );
   }
   
   
   export default Home;
   
-  const styles = {
-    heading: {
-      marginTop:30,
-      fontSize:56,
-    },
-  };
+  
